@@ -3,37 +3,43 @@ layout: home
 
 title: Quality Engineering
 
-titleTemplate: Research, trends and engineering practice
+titleTemplate: Research notes for modern quality engineering
 
 hero:
   name: Quality Engineering
-  text: Research, trends and practical engineering guidance
-  tagline: A structured knowledge base for tracking how modern quality engineering is changing.
+  text: Field notes for modern quality engineering
+  tagline: Focused research on emerging practices, tools and trends.
   actions:
     - theme: brand
       text: Read the latest digest
       link: /research-digests/2026-07-25
     - theme: alt
-      text: Explore Tech Radar studies
+      text: Explore Tech Radar
       link: /tech-radar/
 
 features:
-  - title: Research Digests
-    details: Curated analysis of recent articles, papers and industry developments affecting quality engineering.
-    link: /research-digests/
-  - title: Technology Radar
-    details: Quality-engineering-focused reviews of Thoughtworks Technology Radar editions.
+  - title: Tech Radar
+    details: Structured reviews of emerging technologies, practices and tools, translated into implications for quality engineering.
     link: /tech-radar/
-  - title: Practical Application
-    details: Findings are translated into implications for QE strategy, tooling, delivery controls and operating models.
+    linkText: Explore radar studies
+  - title: Research Digests
+    details: Curated articles, reports and industry perspectives on how modern quality engineering is evolving.
+    link: /research-digests/
+    linkText: Browse research digests
 ---
 
-## Latest research
+## Latest Tech Radar study
+
+### Thoughtworks Technology Radar — Volume 34
+
+A quality-engineering-focused review of the latest radar, separating Thoughtworks' published position from practical QE interpretation and recommended action.
+
+[Read the Volume 34 review →](/tech-radar/vol-34)
+
+## Latest research digest
 
 ### 25 July 2026
 
-[Agentic testing, AI evaluation, just-in-time testing and quality governance →](/research-digests/2026-07-25)
+Agentic testing, AI evaluation, just-in-time testing and quality governance.
 
-## Current Technology Radar study
-
-[Thoughtworks Technology Radar Volume 34 — Quality Engineering Review →](/tech-radar/vol-34)
+[Read the latest digest →](/research-digests/2026-07-25)
