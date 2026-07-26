@@ -9,13 +9,6 @@ hero:
   name: Quality Engineering
   text: Field notes for modern quality engineering
   tagline: Focused research on emerging practices, tools and trends.
-  actions:
-    - theme: brand
-      text: Read the latest digest
-      link: /research-digests/2026-07-25
-    - theme: alt
-      text: Explore Tech Radar
-      link: /tech-radar/
 
 features:
   - title: Tech Radar
