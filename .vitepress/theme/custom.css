@@ -88,6 +88,7 @@ body {
   font-size: clamp(3rem, 6vw, 5.4rem);
   line-height: 0.98;
   color: var(--vp-c-text-1);
+  margin-bottom: 1rem;
 }
 
 .VPHero .text {
@@ -95,6 +96,8 @@ body {
   font-size: clamp(2rem, 3.4vw, 3.25rem);
   line-height: 1.08;
   color: var(--vp-c-text-1);
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .VPHero .tagline {
@@ -103,6 +106,7 @@ body {
   font-size: 1.16rem;
   line-height: 1.8;
   color: var(--vp-c-text-2);
+  margin-top: 0.35rem;
 }
 
 .VPButton.brand {
@@ -231,10 +235,12 @@ body {
 
   .VPHero .name {
     font-size: 3.2rem;
+    margin-bottom: 1.15rem;
   }
 
   .VPHero .text {
     font-size: 2.15rem;
+    margin-bottom: 1.1rem;
   }
 
   .vp-doc p,
