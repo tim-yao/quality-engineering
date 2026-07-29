@@ -16,7 +16,6 @@ The date represents when the digest was compiled. This convention keeps entries 
 
 | Date | Focus | Report |
 |---|---|---|
-| 29 July 2026 | Frontend/backend API integration testing, contract validation, workflow API testing and focused E2E coverage | [Quality Engineering Research Digest](./2026-07-29.md) |
 | 25 July 2026 | Agentic testing, AI evaluation, just-in-time testing and quality governance | [Quality Engineering Research Digest](./2026-07-25.md) |
 
 ## Curation criteria
