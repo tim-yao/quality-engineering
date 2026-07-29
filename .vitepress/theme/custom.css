@@ -127,7 +127,8 @@ body {
 }
 
 .VPFeatures .items {
-  max-width: 980px;
+  width: 100%;
+  max-width: none;
 }
 
 .VPFeature {
