@@ -31,8 +31,8 @@ A quality-engineering-focused review of the latest radar, separating Thoughtwork
 
 ## Latest research digest
 
-### 25 July 2026
+### 29 July 2026
 
-Agentic testing, AI evaluation, just-in-time testing and quality governance.
+Frontend/backend API integration testing, contract validation, workflow API testing and focused E2E coverage.
 
-[Read the latest digest →](/research-digests/2026-07-25)
+[Read the latest digest →](/research-digests/2026-07-29)
