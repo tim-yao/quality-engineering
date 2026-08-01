@@ -21,6 +21,14 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/research-digests/' },
             {
+              text: '1 August 2026',
+              link: '/research-digests/2026-08-01'
+            },
+            {
+              text: '29 July 2026',
+              link: '/research-digests/2026-07-29'
+            },
+            {
               text: '25 July 2026',
               link: '/research-digests/2026-07-25'
             }
