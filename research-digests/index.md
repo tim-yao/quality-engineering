@@ -6,6 +6,7 @@ Dated research digests covering recent quality engineering articles, papers, tec
 
 | Date | Focus | Report |
 |---|---|---|
+| 1 August 2026 | API testing with Zod, OpenAPI-first runtime validation, generated schemas and property-based testing | [Read the digest](./2026-08-01) |
 | 29 July 2026 | Frontend/backend API integration testing, contract validation, workflow API testing and focused E2E coverage | [Read the digest](./2026-07-29) |
 | 25 July 2026 | Agentic testing, AI evaluation, just-in-time testing and quality governance | [Read the digest](./2026-07-25) |
 
