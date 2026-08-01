@@ -31,8 +31,8 @@ A quality-engineering-focused review of the latest radar, separating Thoughtwork
 
 ## Latest research digest
 
-### 29 July 2026
+### 1 August 2026
 
-Frontend/backend API integration testing, contract validation, workflow API testing and focused E2E coverage.
+API testing with Zod, OpenAPI-first runtime validation, generated schemas and property-based testing.
 
-[Read the latest digest →](/research-digests/2026-07-29)
+[Read the latest digest →](/research-digests/2026-08-01)
