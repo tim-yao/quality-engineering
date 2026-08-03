@@ -19,6 +19,7 @@ This project provides a structured learning system that:
 Dated collections of recent articles, papers and engineering discussions related to emerging quality engineering trends.
 
 - [Research digest index](./research-digests/index.md)
+- [4 August 2026 — Visual testing trends, dedicated platform landscape and tooling selection](./research-digests/2026-08-04.md)
 - [1 August 2026 — API testing with Zod, OpenAPI-first runtime validation, generated schemas and property-based testing](./research-digests/2026-08-01.md)
 - [29 July 2026 — Frontend/backend API integration testing, contract validation and workflow testing](./research-digests/2026-07-29.md)
 - [25 July 2026 — Agentic testing, AI evaluation, just-in-time testing and quality governance](./research-digests/2026-07-25.md)
