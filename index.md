@@ -31,8 +31,8 @@ A quality-engineering-focused review of the latest radar, separating Thoughtwork
 
 ## Latest research digest
 
-### 1 August 2026
+### Visual Testing Trends and Tooling Landscape — 4 August 2026
 
-API testing with Zod, OpenAPI-first runtime validation, generated schemas and property-based testing.
+Recent visual-testing research, dedicated platform trends and a structured comparison of Chromatic, Percy, Applitools, Argos, Lost Pixel, BackstopJS and Loki.
 
-[Read the latest digest →](/research-digests/2026-08-01)
+[Read the latest digest →](/research-digests/2026-08-04)
