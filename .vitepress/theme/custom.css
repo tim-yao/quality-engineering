@@ -229,6 +229,23 @@ body {
   border-top: 1px solid var(--vp-c-divider);
 }
 
+/* Homepage illustration: keep the transparent artwork clean, with no VitePress glow. */
+.VPHero .image-bg {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .VPHero .image-container {
+    width: 440px;
+    height: 300px;
+  }
+
+  .VPHero .image-src {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}
+
 @media (max-width: 960px) {
   .VPSidebar {
     background: var(--vp-c-bg);
@@ -249,5 +266,44 @@ body {
   .vp-doc blockquote {
     font-size: 1.03rem;
     line-height: 1.78;
+  }
+}
+
+/* On phones, the illustration follows the complete hero heading/subheading block. */
+@media (max-width: 639px) {
+  .VPHero .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .VPHero .main {
+    order: 1;
+  }
+
+  .VPHero .image {
+    order: 2;
+    width: 100%;
+    min-height: 0;
+    margin: 1.4rem 0 0;
+  }
+
+  .VPHero .image-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .VPHero .image-src {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: min(100%, 400px);
+    max-width: 400px;
+    max-height: none;
+    margin: 0;
+    transform: none;
   }
 }
