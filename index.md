@@ -9,6 +9,9 @@ hero:
   name: Quality Engineering
   text: Field notes for modern quality engineering
   tagline: Focused research on emerging practices, tools and trends.
+  image:
+    src: /qe-mobius-ant.svg
+    alt: Robot ant walking on a Möbius loop
 
 features:
   - title: Tech Radar
