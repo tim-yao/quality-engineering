@@ -10,7 +10,7 @@ hero:
   text: Field notes for modern quality engineering
   tagline: Focused research on emerging practices, tools and trends.
   image:
-    src: /qe-mobius-ant.png
+    src: /qe-mobius-ant.webp
     alt: Robot ant walking on a Möbius loop
 
 features:
