@@ -1,42 +1,16 @@
 # AGENTS.md
 
-## Repository Purpose
-
-This repository is a personal Quality Engineering knowledge base and VitePress website. It captures current research, engineering practices, tools, delivery problems, and Quality Engineering interpretations in a form that can be revisited over time.
-
-The repository is not a generic testing notes collection. Content should remain evidence-based, technically useful, and oriented toward experienced Quality Engineers and engineering leaders.
-
-Read `README.md` before making repository changes.
+Read `README.md` before making repository changes. It is the source of truth for the repository purpose, structure, content areas, local development commands, and deployment setup.
 
 ## Scope of These Instructions
 
-These instructions apply to work performed inside this repository.
+These instructions govern work performed inside this repository.
 
 Project-wide research and reasoning rules may also exist outside the repository, for example in ChatGPT Project Instructions. Do not duplicate those rules here unless they affect repository execution, publishing, or verification.
 
 If instructions conflict, follow the user's most recent explicit requirement first, then preserve established repository conventions where they do not conflict.
 
-## Repository Structure
-
-Current primary content areas are:
-
-```text
-quality-engineering/
-├── .vitepress/
-│   └── config.mts
-├── AGENTS.md
-├── index.md
-├── package.json
-├── README.md
-├── research-digests/
-│   ├── index.md
-│   └── YYYY-MM-DD.md
-└── tech-radar/
-    ├── index.md
-    └── vol-<number>.md
-```
-
-Inspect the repository before adding new top-level directories or changing this structure.
+Inspect the repository before adding new top-level directories or changing its structure.
 
 ## Research Digests
 
@@ -122,18 +96,7 @@ When adding or changing images or other static assets:
 - preserve transparency and dark-mode compatibility when those properties are part of the design requirement
 - do not replace user-supplied artwork with a generated approximation unless explicitly requested
 
-## Build and Verification
-
-The repository uses VitePress.
-
-Relevant commands are:
-
-```bash
-npm install
-npm run docs:dev
-npm run docs:build
-npm run docs:preview
-```
+## Verification
 
 After repository changes, perform verification appropriate to the change.
 
@@ -144,11 +107,7 @@ For content-only changes, at minimum check:
 - source links where modified
 - index/sidebar consistency
 
-For navigation, theme, component, configuration, or asset changes, also run:
-
-```bash
-npm run docs:build
-```
+For navigation, theme, component, configuration, or asset changes, also run the production build command documented in `README.md`.
 
 Do not consider a repository change complete if the production build fails because of that change.
 
