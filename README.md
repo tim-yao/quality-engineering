@@ -12,13 +12,24 @@ This project provides a structured learning system that:
 - Maintains a searchable personal knowledge base over time.
 - Publishes the collected research as a static website through Cloudflare Pages.
 
+The repository is intended to preserve evidence-based Quality Engineering knowledge that remains useful when revisited, rather than becoming a generic collection of testing notes.
+
+## Repository guidance
+
+Repository-specific instructions for coding agents are defined in [`AGENTS.md`](./AGENTS.md).
+
+`AGENTS.md` covers how to work with the repository, including article placement, naming, indexes, VitePress navigation, assets, design constraints and verification. Read it before making repository changes.
+
+Project-wide research and reasoning rules may be maintained separately, for example in ChatGPT Project Instructions. Those rules govern how research is performed; `AGENTS.md` governs how resulting work is added to this repository.
+
 ## Website content
 
 ### Research digests
 
-Dated collections of recent articles, papers and engineering discussions related to emerging quality engineering trends.
+Dated collections of recent articles, papers and engineering discussions related to emerging quality engineering trends and practical delivery problems.
 
 - [Research digest index](./research-digests/index.md)
+- [3 September 2026 — SIT readiness, delivery assurance, upstream verification and quality gates](./research-digests/2026-09-03.md)
 - [4 August 2026 — Visual testing trends, dedicated platform landscape and tooling selection](./research-digests/2026-08-04.md)
 - [1 August 2026 — API testing with Zod, OpenAPI-first runtime validation, generated schemas and property-based testing](./research-digests/2026-08-01.md)
 - [29 July 2026 — Frontend/backend API integration testing, contract validation and workflow testing](./research-digests/2026-07-29.md)
@@ -76,6 +87,7 @@ A separate Wrangler deployment command is not required for this Pages workflow.
 quality-engineering/
 ├── .vitepress/
 │   └── config.mts
+├── AGENTS.md
 ├── index.md
 ├── package.json
 ├── README.md
@@ -89,7 +101,10 @@ quality-engineering/
 
 ## Update model
 
-- Use `research-digests/YYYY-MM-DD.md` for recurring research collections.
+- Use `research-digests/YYYY-MM-DD.md` for recurring research collections and Quality Engineering problem-focused digests.
 - Use `tech-radar/vol-<number>.md` for Thoughtworks Technology Radar studies.
-- Add each new report to its directory index and the VitePress sidebar in `.vitepress/config.mts`.
-- Update the homepage when a new report should be prominently featured.
+- Add each new report to its directory index and the relevant VitePress sidebar in `.vitepress/config.mts`.
+- Keep dated content ordered newest-first where applicable.
+- Update the README when the repository-level content list should reflect new material.
+- Update the homepage only when a report should be prominently featured.
+- Follow [`AGENTS.md`](./AGENTS.md) for the full publishing and verification workflow.
