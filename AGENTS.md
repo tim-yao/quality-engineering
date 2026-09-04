@@ -53,10 +53,11 @@ When adding a digest:
 7. Do not present unsupported claims as established industry practice.
 8. Add the new article to `research-digests/index.md`.
 9. Add the article to the `/research-digests/` sidebar in `.vitepress/config.mts`.
-10. Update `README.md` when the repository-level content list should reflect the new article.
-11. Update the homepage only when the article should be prominently featured.
+10. Update the homepage only when the article should be prominently featured.
 
 Keep digest listings newest-first unless the existing surrounding structure clearly requires otherwise.
+
+The section index is the canonical article listing. Do not maintain a duplicate per-article content list in `README.md`.
 
 ## Thoughtworks Technology Radar Studies
 
@@ -67,8 +68,9 @@ When adding a Radar study:
 1. Preserve the distinction between Thoughtworks' published position and independent Quality Engineering interpretation.
 2. Add the study to `tech-radar/index.md`.
 3. Add the study to the `/tech-radar/` sidebar in `.vitepress/config.mts`.
-4. Update `README.md` where appropriate.
-5. Keep naming consistent with the existing `vol-<number>.md` convention.
+4. Keep naming consistent with the existing `vol-<number>.md` convention.
+
+The section index is the canonical study listing. Do not maintain a duplicate per-study content list in `README.md`.
 
 ## Content Editing Rules
 
@@ -90,7 +92,6 @@ When publishing content, verify all applicable navigation surfaces:
 
 - section index page
 - VitePress sidebar
-- README content list
 - homepage, when intentionally featured
 
 Do not add every article to the top navigation. The top navigation should remain focused on major content sections.
@@ -168,7 +169,6 @@ Before completing a new article publication, verify:
 - the filename follows the repository convention
 - the section index includes it
 - the VitePress sidebar includes it
-- README is updated when appropriate
 - homepage is updated only when intentionally featured
 - references remain usable and traceable
 - internal links are correct
