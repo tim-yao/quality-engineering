@@ -4,9 +4,7 @@ Quality-engineering-focused study notes derived from editions of the [Thoughtwor
 
 ## Reports
 
-| Volume | Published | Study report |
-|---|---:|---|
-| 34 | 15 April 2026 | [Quality Engineering Review](./vol-34) |
+<ContentListing kind="tech-radar" />
 
 ## Review method
 

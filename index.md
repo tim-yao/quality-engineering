@@ -26,16 +26,8 @@ features:
 
 ## Latest Tech Radar study
 
-### Thoughtworks Technology Radar — Volume 34
-
-A quality-engineering-focused review of the latest radar, separating Thoughtworks' published position from practical QE interpretation and recommended action.
-
-[Read the Volume 34 review →](/tech-radar/vol-34)
+<LatestContent kind="tech-radar" />
 
 ## Latest research digest
 
-### Visual Testing Trends and Tooling Landscape — 4 August 2026
-
-Recent visual-testing research, dedicated platform trends and a structured comparison of Chromatic, Percy, Applitools, Argos, Lost Pixel, BackstopJS and Loki.
-
-[Read the latest digest →](/research-digests/2026-08-04)
+<LatestContent kind="research-digests" />

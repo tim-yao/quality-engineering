@@ -19,19 +19,17 @@ Use `research-digests/YYYY-MM-DD.md` for dated Quality Engineering research arti
 When adding a digest:
 
 1. Use ISO date format for the filename: `YYYY-MM-DD.md`.
-2. Follow the structure and tone of recent existing digests rather than introducing an unrelated article format.
-3. Keep the problem statement concise when the article is based on a delivery problem.
-4. Focus on root causes, engineering implications, current evidence, recommendations, implementation considerations, risks, and trade-offs.
-5. Preserve direct links to important original sources.
-6. Distinguish published evidence from repository interpretation or recommendations.
-7. Do not present unsupported claims as established industry practice.
-8. Add the new article to `research-digests/index.md`.
-9. Add the article to the `/research-digests/` sidebar in `.vitepress/config.mts`.
-10. Update the homepage only when the article should be prominently featured.
+2. Add `title`, `date` (`YYYY-MM-DD`) and `summary` frontmatter. These fields are the canonical metadata used by the site.
+3. Follow the structure and tone of recent existing digests rather than introducing an unrelated article format.
+4. Keep the problem statement concise when the article is based on a delivery problem.
+5. Focus on root causes, engineering implications, current evidence, recommendations, implementation considerations, risks, and trade-offs.
+6. Preserve direct links to important original sources.
+7. Distinguish published evidence from repository interpretation or recommendations.
+8. Do not present unsupported claims as established industry practice.
 
-Keep digest listings newest-first unless the existing surrounding structure clearly requires otherwise.
+The research digest index, sidebar and homepage latest-digest section are generated automatically from article frontmatter and sorted newest-first. Do not add manual article listings to those pages or to `.vitepress/config.mts`.
 
-The section index is the canonical article listing. Do not maintain a duplicate per-article content list in `README.md`.
+The dated article files and their frontmatter are the canonical article listing. Do not maintain a duplicate per-article content list in `README.md`.
 
 ## Thoughtworks Technology Radar Studies
 
@@ -40,11 +38,12 @@ Use `tech-radar/vol-<number>.md` for Quality Engineering-focused reviews of Thou
 When adding a Radar study:
 
 1. Preserve the distinction between Thoughtworks' published position and independent Quality Engineering interpretation.
-2. Add the study to `tech-radar/index.md`.
-3. Add the study to the `/tech-radar/` sidebar in `.vitepress/config.mts`.
-4. Keep naming consistent with the existing `vol-<number>.md` convention.
+2. Keep naming consistent with the existing `vol-<number>.md` convention.
+3. Add `title`, `date` (`YYYY-MM-DD`), `summary` and numeric `volume` frontmatter. These fields are the canonical metadata used by the site.
 
-The section index is the canonical study listing. Do not maintain a duplicate per-study content list in `README.md`.
+The Tech Radar index, sidebar and homepage latest-study section are generated automatically from study frontmatter and sorted newest-first. Do not add manual study listings to those pages or to `.vitepress/config.mts`.
+
+The study files and their frontmatter are the canonical study listing. Do not maintain a duplicate per-study content list in `README.md`.
 
 ## Content Editing Rules
 
@@ -58,15 +57,15 @@ Before editing an existing article:
 
 For research content, prefer concise, substantive engineering prose over generic management language or textbook explanations.
 
-## VitePress Navigation
+## VitePress Navigation and Content Discovery
 
-Navigation is configured in `.vitepress/config.mts`.
+Top-level navigation is configured in `.vitepress/config.mts`. Article sidebars, section indexes and homepage latest-content sections are generated from the Markdown files and their frontmatter through `.vitepress/content.ts` and `.vitepress/content.data.ts`.
 
-When publishing content, verify all applicable navigation surfaces:
+When publishing content:
 
-- section index page
-- VitePress sidebar
-- homepage, when intentionally featured
+- use the required filename convention and frontmatter fields
+- do not manually edit the section indexes, article sidebars or homepage latest-content sections
+- run the production build; missing or invalid canonical metadata must fail the build
 
 Do not add every article to the top navigation. The top navigation should remain focused on major content sections.
 
@@ -105,7 +104,7 @@ For content-only changes, at minimum check:
 - Markdown structure
 - internal links
 - source links where modified
-- index/sidebar consistency
+- required frontmatter and generated-content consistency
 
 For navigation, theme, component, configuration, or asset changes, also run the production build command documented in `README.md`.
 
@@ -126,9 +125,8 @@ Before completing a new article publication, verify:
 
 - the file is in the correct directory
 - the filename follows the repository convention
-- the section index includes it
-- the VitePress sidebar includes it
-- homepage is updated only when intentionally featured
+- required canonical frontmatter is present and accurate
+- the generated section index, sidebar and homepage latest-content section include it in newest-first order
 - references remain usable and traceable
 - internal links are correct
-- the production build passes when the change affects site behavior, navigation, configuration, theme, or assets
+- the production build passes

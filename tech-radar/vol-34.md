@@ -1,3 +1,10 @@
+---
+title: "Thoughtworks Technology Radar Volume 34 — Quality Engineering Review"
+date: 2026-04-15
+summary: "A quality-engineering-focused review separating Thoughtworks' published position from practical QE interpretation and recommended action"
+volume: 34
+---
+
 # Thoughtworks Technology Radar Volume 34 — Quality Engineering Review
 
 > **Published:** 15 April 2026  

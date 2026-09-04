@@ -1,4 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { fileURLToPath } from 'node:url'
+import { discoverContent, formatContentDate } from './content'
+
+const rootDir = fileURLToPath(new URL('..', import.meta.url))
+const content = discoverContent(rootDir)
 
 export default defineConfig({
   lang: 'en-AU',
@@ -20,22 +25,10 @@ export default defineConfig({
           text: 'Research Digests',
           items: [
             { text: 'Overview', link: '/research-digests/' },
-            {
-              text: '4 August 2026',
-              link: '/research-digests/2026-08-04'
-            },
-            {
-              text: '1 August 2026',
-              link: '/research-digests/2026-08-01'
-            },
-            {
-              text: '29 July 2026',
-              link: '/research-digests/2026-07-29'
-            },
-            {
-              text: '25 July 2026',
-              link: '/research-digests/2026-07-25'
-            }
+            ...content.researchDigests.map((item) => ({
+              text: formatContentDate(item.date),
+              link: item.link
+            }))
           ]
         }
       ],
@@ -44,7 +37,10 @@ export default defineConfig({
           text: 'Thoughtworks Technology Radar',
           items: [
             { text: 'Overview', link: '/tech-radar/' },
-            { text: 'Volume 34', link: '/tech-radar/vol-34' }
+            ...content.techRadarStudies.map((item) => ({
+              text: `Volume ${item.volume}`,
+              link: item.link
+            }))
           ]
         }
       ]
