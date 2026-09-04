@@ -29,18 +29,12 @@ Project-wide research and reasoning rules may be maintained separately, for exam
 Dated collections of recent articles, papers and engineering discussions related to emerging quality engineering trends and practical delivery problems.
 
 - [Research digest index](./research-digests/index.md)
-- [3 September 2026 — SIT readiness, delivery assurance, upstream verification and quality gates](./research-digests/2026-09-03.md)
-- [4 August 2026 — Visual testing trends, dedicated platform landscape and tooling selection](./research-digests/2026-08-04.md)
-- [1 August 2026 — API testing with Zod, OpenAPI-first runtime validation, generated schemas and property-based testing](./research-digests/2026-08-01.md)
-- [29 July 2026 — Frontend/backend API integration testing, contract validation and workflow testing](./research-digests/2026-07-29.md)
-- [25 July 2026 — Agentic testing, AI evaluation, just-in-time testing and quality governance](./research-digests/2026-07-25.md)
 
 ### Thoughtworks Technology Radar studies
 
 Quality-engineering-focused reviews of Thoughtworks Technology Radar editions, separating the published position from independent QE interpretation and recommended action.
 
 - [Technology Radar study index](./tech-radar/index.md)
-- [Volume 34 — Quality Engineering Review](./tech-radar/vol-34.md)
 
 ## Run locally
 
@@ -105,6 +99,5 @@ quality-engineering/
 - Use `tech-radar/vol-<number>.md` for Thoughtworks Technology Radar studies.
 - Add each new report to its directory index and the relevant VitePress sidebar in `.vitepress/config.mts`.
 - Keep dated content ordered newest-first where applicable.
-- Update the README when the repository-level content list should reflect new material.
 - Update the homepage only when a report should be prominently featured.
 - Follow [`AGENTS.md`](./AGENTS.md) for the full publishing and verification workflow.
