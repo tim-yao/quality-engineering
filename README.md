@@ -16,11 +16,9 @@ The repository is intended to preserve evidence-based Quality Engineering knowle
 
 ## Repository guidance
 
-Repository-specific instructions for coding agents are defined in [`AGENTS.md`](./AGENTS.md).
+Repository-specific instructions for coding agents are defined in [`AGENTS.md`](./AGENTS.md). Read it before making repository changes.
 
-`AGENTS.md` covers how to work with the repository, including article placement, naming, indexes, VitePress navigation, assets, design constraints and verification. Read it before making repository changes.
-
-Project-wide research and reasoning rules may be maintained separately, for example in ChatGPT Project Instructions. Those rules govern how research is performed; `AGENTS.md` governs how resulting work is added to this repository.
+Project-wide research and reasoning rules may be maintained separately, for example in ChatGPT Project Instructions.
 
 ## Website content
 
@@ -93,11 +91,4 @@ quality-engineering/
     └── vol-<number>.md
 ```
 
-## Update model
-
-- Use `research-digests/YYYY-MM-DD.md` for recurring research collections and Quality Engineering problem-focused digests.
-- Use `tech-radar/vol-<number>.md` for Thoughtworks Technology Radar studies.
-- Add each new report to its directory index and the relevant VitePress sidebar in `.vitepress/config.mts`.
-- Keep dated content ordered newest-first where applicable.
-- Update the homepage only when a report should be prominently featured.
-- Follow [`AGENTS.md`](./AGENTS.md) for the full publishing and verification workflow.
+For publishing and repository-change procedures, follow [`AGENTS.md`](./AGENTS.md).
