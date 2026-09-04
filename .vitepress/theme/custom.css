@@ -86,11 +86,11 @@ body {
   border-radius: 7px;
 }
 
-.VPHero .name {
+.VPHomeHero.VPHero.has-image .name {
   font-size: clamp(3rem, 6vw, 5.4rem);
   line-height: 0.98;
   color: var(--vp-c-text-1);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .VPHero .text {
@@ -259,9 +259,9 @@ body {
     background: var(--vp-c-bg);
   }
 
-  .VPHero .name {
+  .VPHomeHero.VPHero.has-image .name {
     font-size: 3.2rem;
-    margin-bottom: 1.15rem;
+    margin-bottom: 1.75rem;
   }
 
   .VPHero .text {
