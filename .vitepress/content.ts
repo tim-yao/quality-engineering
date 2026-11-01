@@ -95,7 +95,7 @@ export function discoverContent(rootDir: string): SiteContent {
       rootDir,
       'research-digests',
       'research-digest',
-      /^\d{4}-\d{2}-\d{2}\.md$/
+      /^\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+(?:-[a-z0-9]+)*)?\.md$/
     ),
     techRadarStudies: discoverSection(
       rootDir,
