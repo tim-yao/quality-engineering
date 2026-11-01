@@ -14,11 +14,11 @@ Inspect the repository before adding new top-level directories or changing its s
 
 ## Research Digests
 
-Use `research-digests/YYYY-MM-DD.md` for dated Quality Engineering research articles and digests.
+Use `research-digests/YYYY-MM-DD[-topic].md` for dated Quality Engineering research articles and digests.
 
 When adding a digest:
 
-1. Use ISO date format for the filename: `YYYY-MM-DD.md`.
+1. Use ISO date format for the filename: `YYYY-MM-DD.md` for a single digest or `YYYY-MM-DD-topic.md` for multiple digests published on one day; use a short lowercase hyphenated topic slug.
 2. Add `title`, `date` (`YYYY-MM-DD`) and `summary` frontmatter. These fields are the canonical metadata used by the site.
 3. Follow the structure and tone of recent existing digests rather than introducing an unrelated article format.
 4. Keep the problem statement concise when the article is based on a delivery problem.
