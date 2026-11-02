@@ -9,6 +9,7 @@ export interface ContentItem {
   date: string
   summary: string
   link: string
+  topics: string[]
   volume?: number
 }
 
@@ -70,10 +71,21 @@ function discoverSection(
 
       const item: ContentItem = {
         kind,
+        topics: [],
         title: metadata.title,
         date: metadata.date,
         summary: metadata.summary,
         link: `/${directory}/${fileName.replace(/\.md$/, '')}`
+      }
+
+      if (metadata.topics) {
+        try {
+          const topics = JSON.parse(metadata.topics)
+          if (!Array.isArray(topics) || topics.some(topic => typeof topic !== 'string' || !topic.trim())) throw new Error()
+          item.topics = [...new Set(topics.map(topic => topic.trim()))]
+        } catch {
+          throw new Error(`Invalid topics in ${filePath}: use a JSON-style list of topic names`)
+        }
       }
 
       if (kind === 'tech-radar') {

@@ -25,6 +25,7 @@ export default defineConfig({
           text: 'Research Digests',
           items: [
             { text: 'Overview', link: '/research-digests/' },
+            { text: 'Topic map', link: '/research-digests/map' },
             ...content.researchDigests.map((item) => ({
               text: formatContentDate(item.date),
               link: item.link

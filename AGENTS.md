@@ -29,6 +29,8 @@ When adding a digest:
 
 The research digest index, sidebar and homepage latest-digest section are generated automatically from article frontmatter and sorted newest-first. Do not add manual article listings to those pages or to `.vitepress/config.mts`.
 
+The research topic map at `research-digests/map.md` is also generated from digest frontmatter. Add `topics` as a JSON-style inline list, for example `topics: ["API & integration", "Delivery assurance"]`. Reuse existing topic names where appropriate; new names automatically create topic nodes. Keep assignments focused on the digest's substantive themes. Topic counts measure digests, not independent sources. Missing topics are allowed, but the digest will have no graph connections until assigned. Do not maintain a separate article or relationship list for the map.
+
 The dated article files and their frontmatter are the canonical article listing. Do not maintain a duplicate per-article content list in `README.md`.
 
 ## Thoughtworks Technology Radar Studies
