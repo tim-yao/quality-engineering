@@ -2,6 +2,7 @@
 title: "Sustaining Cross-System Regression After Project Delivery"
 date: 2026-11-01
 summary: "A low-cost operating model for persistent cross-system journey ownership, manual regression baselines, progressive automation and long-term maintenance after temporary project teams disband"
+topics: ["Test architecture", "API & integration", "Delivery assurance"]
 ---
 
 # Sustaining Cross-System Regression After Project Delivery

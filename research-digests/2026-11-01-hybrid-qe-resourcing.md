@@ -2,6 +2,7 @@
 title: "Hybrid QE Resourcing: Shared Capacity and Joint Governance"
 date: 2026-11-01
 summary: "A practical federated staffing model for stable team alignment, planned sharing, continuity coverage, specialist services and explicit cross-team allocation decisions"
+topics: ["Delivery assurance"]
 ---
 
 # Hybrid QE Resourcing: Shared Capacity and Joint Governance
